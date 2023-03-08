@@ -1,0 +1,38 @@
+Asymptotic Analysis:
+-->The idea is to measure the order of growth.
+-->Doesnot depend upon machine,programming language used
+-->No need to implement we can analyse
+
+Order of growth-->Is then time taken to solve the function
+
+
+Best,worst and average case of an algorithm
+-->We divide the order of growth of an algoritm into best worst and average cases
+
+int getSum(int[] arr,int n){
+    int sum=0;//const statement(c2)
+    for(int i=0;i<n;i++){
+        sum+=arr[i];//n times const statement-->c1*n
+    }
+    return sum;(c2)
+}
+
+Time complexity:c1*n+c2-->O(n)-->Ignore the lower order term and accept the higher order term only
+
+int getSum(int[] arr,int n){
+    if(n%2==0){
+        return 0;
+    }
+    int sum=0;//const statement(c2)
+    for(int i=0;i<n;i++){
+        sum+=arr[i];//n times const statement-->c1*n
+    }
+    return sum;(c2)
+}
+
+Best case:constant-->when n is even-->Bogus-->rarely we consider
+Average case-->We take equally likely probablity of both the cases-->we consider sometimes
+Worst case-->Linear-->most of the time we find
+
+-->When we are building a software w emostly consider the worst case
+-->best case will not tell every thing about the software

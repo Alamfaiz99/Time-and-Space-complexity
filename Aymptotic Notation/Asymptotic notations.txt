@@ -1,0 +1,46 @@
+'''
+Best,Average and Worst case
+& Asymptotic notation
+
+Order of Growth-->
+
+def getSum(l):
+   s=0
+   for x in l:
+        s=s+x
+   return sum
+#Function for sum of elements in lsit
+
+Order of growt
+h:
+f(n)=c1n+c2
+order of growth is n(linear)
+
+def getSumOdd(l):
+     if len(l)%2==0:
+         return 0
+    s=0
+    for x in l:
+        s=s+x
+    return s
+You can not predict the order of growth of this function
+sometimes it will take if part and sometimes else part
+
+in this type of functions we divide the algoritm into
+Best case,Average case,Worst case
+Best case:Constant
+Worst case:Linear
+Average case:Linear(Under the assunmption that even and odd r equally likely)
+
+
+Asymptotic notations-->are mathematical tools to represent order of growth of a function
+Order of Growth-->Measuring the performance of algorithm in relation to the input size n in known as order of growth.
+
+
+
+c1n+c2
+Big O:Represent Exact or upper bound  O(n)-->exact or usse uper waali values
+Theta:Represent exact bound           Theta(n)-->exact or usse niche waali vales
+Omega:Represent exact or lower bound  omega(1)-->exact or usse niche waali values
+
+'''

@@ -1,0 +1,50 @@
+What is Order of Growth?
+A function f(n) is said to be growing fast than g(n) iff-->if and only if
+
+lim         g(n)
+           -------  =  0 
+n-->INF     f(n)
+
+
+lim         f(n)
+           -------  =  INF 
+n-->INF     g(n)
+
+g(n) and f(n) are time complexity of two algorithm of same problem
+
+g(n)-->Time taken to solve one algo
+f(n)-->time taken to solve another problem
+
+n-->should be larger-->mathematically infinite
+Order of growth-->les-->algorithm is more efficient
+Order of Growth-->high-->algorithm is less efficient
+
+f(n)=n+1-->bad algo-->linear growth-->talk about larger input size
+g(n)=1000-->good algo-->constant growth-->talk about larget input size
+
+because in above algo it is efficient only when user input n>=999
+
+Constraints-->
+n>=0
+f(n)>=0
+g(n)>=0
+
+Example-->
+f(n)=n^2+n+6
+g(n)=2*n+5
+
+solution-->lim      2n+5                                     2n/n^2+5/n^2          2/n+5/n^2
+                  -------  == -->No factor divide by n       --------  ==          ---------- === 0
+          n->INF  n^2+n+6                                 n^2/n^2+n/n^2+6/n^2     1+1/n+6/n^2
+
+          -->after solving its equal to zero
+          -->f(n) is growing faster
+
+
+IMPPPPPP NOTES-->
+Direct way to find the order of Growth
+1)ignore lower order terms
+2)ignore leading constant
+
+How do we know which term is lower order?
+C<loglogn<logn<n1/3<n1/2<n<n^2<n^3<n^4<2^n<npower(n)
